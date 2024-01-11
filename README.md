@@ -30,7 +30,7 @@ Experimente o projeto em seu ambiente local seguindo estes passos:
 2. **Instale as Dependências:**
 
     ```bash
-    cd seu-projeto
+    cd tree-js-test
     npm install
     ```
 
