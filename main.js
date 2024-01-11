@@ -80,6 +80,11 @@ scene.add( gridHelper )
 //------------------------------------------------------------------
 
 //------------------------------------------------------------------
+// Orbit controls controla a camera com o mouse
+const controls = new OrbitControls( camera, renderer.domElement )
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
 // Função para rederizar o objeto automaticamente
 function animate() {
   requestAnimationFrame( animate )
@@ -91,6 +96,8 @@ function animate() {
   torus.rotation.z += 0.01
   //------------------------------------------------------------------
   
+  controls.update() // Atualiza o controle do mouse
+
   renderer.render( scene, camera )
 }
 //------------------------------------------------------------------
