@@ -40,9 +40,14 @@ pointLight2.position.set(-20,-20,-10)
 scene.add(pointLight, pointLight2)
 
 // Ponto de luz ambiente | Ilumina todos objetos em cena
-// const ambientLight = new THREE.AmbientLight(0xffffff)
+const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
 
-
+// Indicador guia de onde está a luz
+const lightHelper = new THREE.PointLightHelper( pointLight )
+const lightHelper2 = new THREE.PointLightHelper( pointLight2 )
+const lightHelperAmbient = new THREE.PointLightHelper( light )
+scene.add( lightHelper, lightHelper2, lightHelperAmbient )
 
 // Função para rederizar o objeto automaticamente
 function animate() {
