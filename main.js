@@ -25,7 +25,7 @@ camera.position.setZ(30)
 // renderer.render( scene, camera )
 
 // Objeto Geométrico
-const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 ) // Obejeto
+const geometry = new THREE.TorusGeometry( 6, 2, 16, 100 ) // Obejeto
 const material = new THREE.MeshBasicMaterial( { color: 0x9E4770 , wireframe: true } ) //Material
 const torus = new THREE.Mesh( geometry, material ) // Criando 'mesh' combinando o Objeto geométrico e o material
 
