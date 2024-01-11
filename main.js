@@ -26,7 +26,7 @@ camera.position.setZ(30)
 
 // Objeto Geométrico
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 ) // Obejeto
-const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } ) //Material que reage a luz
+const material = new THREE.MeshStandardMaterial( { color: 0x9E4770 } ) //Material que reage a luz
 const torus = new THREE.Mesh( geometry, material ) // Criando 'mesh' combinando o Objeto geométrico e o material
 
 // Adicionando Obejato à cena
