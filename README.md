@@ -24,7 +24,7 @@ Experimente o projeto em seu ambiente local seguindo estes passos:
 1. **Clone o Repositório:**
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-projeto.git
+    git clone https://github.com/AllRedCat/tree-js-test.git
     ```
 
 2. **Instale as Dependências:**
