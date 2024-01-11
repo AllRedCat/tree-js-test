@@ -33,12 +33,15 @@ const torus = new THREE.Mesh( geometry, material ) // Criando 'mesh' combinando 
 scene.add(torus)
 
 // Ponto de luz
-const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(20,20,20)
+const pointLight = new THREE.PointLight(0xffffff, 50)
+const pointLight2 = new THREE.PointLight(0xffffff, 100)
+pointLight.position.set(10,10,10)
+pointLight2.position.set(-20,-20,-10)
+scene.add(pointLight, pointLight2)
 
 // Ponto de luz ambiente | Ilumina todos objetos em cena
+// const ambientLight = new THREE.AmbientLight(0xffffff)
 
-scene.add(pointLight)
 
 
 // Função para rederizar o objeto automaticamente
