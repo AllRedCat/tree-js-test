@@ -49,6 +49,10 @@ const lightHelper2 = new THREE.PointLightHelper( pointLight2 )
 const lightHelperAmbient = new THREE.PointLightHelper( light )
 scene.add( lightHelper, lightHelper2, lightHelperAmbient )
 
+// Grid bidimencional
+const gridHelper = new THREE.GridHelper(200, 50)
+scene.add( gridHelper )
+
 // Função para rederizar o objeto automaticamente
 function animate() {
   requestAnimationFrame( animate )
