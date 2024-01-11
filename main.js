@@ -38,6 +38,9 @@ function animate() {
 
   // Animando o objeto
   torus.rotation.x += 0.01
+  torus.rotation.y += 0.008
+  torus.rotation.z += 0.01
+
 
   renderer.render( scene, camera )
 }
