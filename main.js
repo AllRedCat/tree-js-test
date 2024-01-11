@@ -3,6 +3,9 @@ import './style.css'
 // Importar 'Three.js'
 import * as THREE from 'three'
 
+// Importar 'OrbitControl' do Three.js
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+
 // Criando cena
 const scene = new THREE.Scene()
 
